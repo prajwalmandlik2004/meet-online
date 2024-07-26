@@ -26,15 +26,14 @@ const Navbar = () => {
       </Link>
 
       <SuprSendInbox
-          // bellComponent={() => <Bell></Bell>}
-          // theme={{badge : {backgroundColor : 'red'}}}
-          // themeType={theme}
-          workspaceKey='LcNGew7JxPiRFTdMpGD0'
-          subscriberId="4VlSBD2VlSzovKG9Ke281OmO7vVb_mvzKTQ3o54jdXw"
-          distinctId='prajwalmandlik2004@gmail.com'
-        />
-
-
+        workspaceKey='LcNGew7JxPiRFTdMpGD0'
+        subscriberId="4VlSBD2VlSzovKG9Ke281OmO7vVb_mvzKTQ3o54jdXw"
+        distinctId='prajwalmandlik2004@gmail.com'
+        theme={{
+          badge: { backgroundColor: 'white', color: 'black' }, 
+          bell: { color: 'white' } 
+        }}
+      />
 
       <div className="flex-between gap-5">
         <SignedIn>
