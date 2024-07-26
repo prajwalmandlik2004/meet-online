@@ -25,6 +25,7 @@ export const sidebarLinks = [
         route: '/personal-room',
         label: 'Personal Room',
     },
+    
 ];
 
 export const avatarImages = [
@@ -34,6 +35,7 @@ export const avatarImages = [
     '/images/women-2.png',
     '/images/man-3.png',
 ];
+
 
 
 

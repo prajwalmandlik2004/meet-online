@@ -1,5 +1,10 @@
+'use client';
+
+
 import Image from 'next/image';
 import Link from 'next/link';
+import SuprSendInbox from '@suprsend/react-inbox'
+import 'react-toastify/dist/ReactToastify.css'
 import { SignedIn, UserButton } from '@clerk/nextjs';
 
 import MobileNav from './MobileNav';
@@ -19,6 +24,20 @@ const Navbar = () => {
           Meetify
         </p>
       </Link>
+
+      <SuprSendInbox
+          // apiKey="SS.r94lBmP84X3KToAdw9w04MQmLTB5ly0KhWJqe4MJfn8"
+          // bellComponent={() => <Bell></Bell>}
+          // theme={{badge : {backgroundColor : 'red'}}}
+          // themeType={theme}
+          workspaceKey='LcNGew7JxPiRFTdMpGD0'
+          // workspaceSecret='SS.WSS.rrUdk4sxsgrNvmfjECgxDh5VzhakmfkfSqaIJ1Me'
+          subscriberId="4VlSBD2VlSzovKG9Ke281OmO7vVb_mvzKTQ3o54jdXw"
+          distinctId='prajwalmandlik2004@gmail.com'
+        />
+
+
+
       <div className="flex-between gap-5">
         <SignedIn>
           <UserButton afterSignOutUrl="/sign-in" />
@@ -26,9 +45,13 @@ const Navbar = () => {
 
         <MobileNav />
       </div>
+
     </nav>
   );
 };
 
 export default Navbar;
+
+
+
 
