@@ -1,9 +1,8 @@
 import MeetingTypeList from '@/components/MeetingTypeList';
-// import suprsend from "@suprsend/web-sdk";
 
 const Home = () => {
   const now = new Date();
-  // suprsend.init(process.env.WORKSPACE_KEY!, process.env.WORKSPACE_SECRET!)
+ 
   // const time = now.toLocaleTimeString('en-US', { timeZone: 'Asia/Tokyo', hour12: true, hour: '2-digit', minute: '2-digit' });
   const localtime = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
   const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full' })).format(now);
@@ -28,6 +27,7 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
 
